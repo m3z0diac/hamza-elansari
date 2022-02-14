@@ -1,0 +1,591 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding-top: 0px;
+	background: none;
+}
+
+
+/*start navbar*/
+
+
+.navbar {
+	background: none !important;
+	margin: 0;
+	border-radius: 0%;
+}
+
+.navbar-default{
+	border: none;
+}
+
+.navbar-default .navbar-nav > li {
+	margin-right: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px;
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #000;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus
+{
+	background: none;
+	color: #954ced;
+	transition: 0.5s
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+}
+
+.navbar > .container .navbar-brand span:first-child{
+	color: #954ced;
+}
+
+.navbar > .container .navbar-brand span:last-child{
+	color: #000;
+}
+
+.navbar-default .navbar-toggle {
+	border: none !important;
+	background: none !important;
+	transition: 0.5s
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: #954ced !important;
+	border: 2px solid #954ced;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar{
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #954ced;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus
+{
+	background: none;
+	color: #954ced;
+}
+
+/*end navbar*/
+
+p {
+	display: none;
+	color: #000;
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+	color: #954ced;
+	font-family: 'Trebuchet MS', sans-serif;
+	position: relative;
+	bottom: 10px;
+}
+
+
+/*start header*/
+
+.header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/header1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header h1 {
+	margin-top: 45vh;
+	color: #fff;
+	font-family: 'Trebuchet MS', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+
+.header h2 {
+	color: #fff;
+	font-family: 'Trebuchet MS', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+.header i {
+	font-size: 18px;
+	color: #fff;
+}
+
+/*end header*/
+
+/*start anout*/
+
+.about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #f8f9fa;
+
+}
+
+.about img {
+	width: 60%;
+	position: relative;
+	left: -25%;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.about img:hover {
+	transform: scale(1.1) rotate(5deg) ;
+}
+
+/*end about*/
+
+/*start skills*/
+
+.skills {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.skills h1 {
+	color: #fff;
+	font-family: 'Trebuchet MS', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+.skills p {
+	margin-top: 10px;
+	color: #fff;
+}
+
+.skills p i {
+	padding-left: 7px;
+	padding-right: 7px;
+	color: #000d1e;
+	background: #fff;
+}
+
+.skills p#aboutskills {
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.skills-container {
+  width:100%;
+  background-color: #ddd;
+}
+
+.skills-stat {
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.HTML5 {width: 90%; background-color: #954ced;}
+.CSS3 {width: 80%; background-color: #954ced;}
+.Bootstrap {width: 70%; background-color: #954ced;}
+.php {width: 90%; background-color: #954ced;}
+.MySql {width: 95%; background-color: #954ced;}
+.jQuery {width: 60%; background-color: #954ced;}
+.dotenet {width: 55%; background-color: #954ced;}
+
+/*end skills*/
+
+
+
+.projects {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.projects .project {
+	padding: 0px;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background: #fff;
+	left: 500px;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 0px 3px 0px #954ced;
+}
+
+.projects .project:hover{
+	transition: 1s;
+	box-shadow: 2px 2px 8px 2px #000;
+}
+
+.projects .project:hover img{
+	transform: scale(1.4) rotateX(360deg);
+}
+
+.projects .project h3 {
+	margin-bottom: 0;
+	color: #954ced;
+}
+
+.projects .project p {
+	color: #000;
+	font-size: 16px;
+}
+
+.projects .project p span{
+	color: #777;
+}
+
+.projects .project .projimg {
+	padding: 0px;
+	overflow: hidden;
+}
+
+.projects img {
+	width: 100%;
+	transition: 1s;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.projects img:hover {
+	transform: scale(1.4) rotate(0) ;
+}
+
+.visit, .readmore:hover {
+	background-color: #954ced;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #fff;
+	transition: 0.5s;
+	border: 2px solid #954ced;
+}
+
+.visit:hover, .readmore {
+	color: #954ced;
+	background-color: #fff;
+	border: 2px solid #000;
+	letter-spacing: 1px;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.projects .project button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.projects .project button a:hover {
+	color: #000
+}
+
+.projects .carousel-indicators {
+	bottom: 320px;
+	margin-bottom: 50px;
+
+}
+
+.projects .controller {
+	background-color: #954ced;
+	font-size: 15px;
+	color: #fff;
+	transition: 0.5s;
+	border: 2px solid #954ced;
+	font-weight: bold;
+}
+
+.projects .controller:hover {
+	color: #954ced;
+	background-color: #fff;
+	border: 2px solid #000;
+}
+
+/*.projects .carousel-indicators li {
+	width: 25px;
+	height: 25px;
+	border-radius: 0;
+	color: black;
+	text-indent: 0;
+	background: none;
+	border-color: #954ced;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5px;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.projects .carousel-indicators .active {
+	width: 25px;
+	height: 25px;
+	background-color: #954ced;
+	color: #fff;
+}*/
+
+.projects .project .carousel-inner {
+	margin-top: 30px !important;
+}
+
+/*end projects*/
+
+
+/*start services*/
+
+
+/*end services*/
+
+.services {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #f8f9fa;
+}
+
+.services .service {
+	margin: 10px;
+	height: 220px;
+	border: solid #954ced 2px;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.services .service h3 {
+	font-family: 'Trebuchet MS', sans-serif;
+	letter-spacing: 1px;
+}
+
+.services .service i {
+	font-size: 30px;
+	transition: 0.5s;
+	color: #954ced;
+}
+
+.services .service:hover i{
+	transform: scale(1.5) rotate(360deg);
+}
+
+.services .service:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 4px 0px #000;
+}
+
+/*end services*/
+
+/*start blog*/
+
+.blog {
+	background: linear-gradient(90deg, #000d1e 0%, #954ced 90%);
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.blog h2 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #fff;
+}
+
+.blog h3 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #954ced;
+}
+
+
+.blog .articles {
+
+}
+
+.blog .articles .article {
+	box-shadow: 0px 0px 4px 0px #000;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.blog .articles .article .blogpic {
+	overflow: hidden;
+	margin: 0;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.blog .articles .article:hover .blogpic{
+	transform: scale(1.2) rotate(0deg);
+}
+
+
+.blog .articles .article .blogtitle {
+	padding: 10px;
+}
+
+#date {
+	color: #777
+}
+
+/*end blog*/
+
+/*start cyber security*/
+
+.cyber-sec {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #fff;
+}
+
+.cyber-sec h2 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #954ced;	
+}
+
+.cyber-sec .row {
+	margin-top: 30px;
+}
+
+.cyber-sec p {
+	margin-top: 20px;
+	color: #000d1e
+}
+
+.cyber-sec p a {
+	color: #954ced;
+	text-decoration: underline;
+}
+
+.cyber-sec .row h3 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #954ced;
+}
+
+.cyber-sec .img-c {
+	overflow: hidden;
+	border: 1px solid #fff;
+	padding: 0px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.cyber-sec img {
+	width: 100%;
+	transition: 0.5s;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.cyber-sec img:hover {
+	transform: scale(1.1) rotate(5deg) ;
+}
+
+/*end cyber security*/
+
+/*start contact*/
+
+.contact {
+	background: #f8f9fa;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contact h2 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #954ced;
+}
+
+.contact ul, .contact form {
+	margin-top: 30px;
+}
+
+.contact ul li a {
+	font-size: 18px;
+	color: #000;
+	transition: 0.5s;
+}
+
+.contact ul li a:hover {
+	text-decoration: none;
+	transform: scale(1.3);
+	color: #954ced;
+}
+
+.contact .send {
+	background-color: #954ced;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: #fff;
+	transition: 0.5s;
+	border: 2px solid #954ced;
+}
+
+.contact .send:hover {
+	color: #954ced;
+	background-color: #fff;
+}
+
+.form-control {
+	border: 1px solid #954ced;
+}
+
+.form-control:hover, .form-control:focus {
+	box-shadow: none !important;
+	border: 1px solid #954ced;
+}
+
+/*end contact*/
+
+
+/*js stuff*/
+
+.set-border {
+	border-bottom: solid 3px #954ced;
+	transition: 0.5s
+}
+
+.nav-shadow {
+	box-shadow: 0px 0px 2px 0px #954ced;
+}
+
+.set-bg {
+	background: #fff !important;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+.left-it {
+	left: -400px !important;
+}
+
+.return-it {
+	left: 0px !important;
+}
+
+.state500 {
+	margin-top: 40vh;
+}
+
+.state500 h1 {
+	color: #fff;
+	font-family: 'Trebuchet MS', sans-serif;
+}
