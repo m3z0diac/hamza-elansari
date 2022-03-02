@@ -115,7 +115,7 @@ h2 {
 /*start header*/
 
 .header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),url(../img/recomneded.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../img/header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
