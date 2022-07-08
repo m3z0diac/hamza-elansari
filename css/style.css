@@ -99,7 +99,7 @@ img:hover {
 p {
 	display: none;
 	color: #000;
-	font-size: 17px;
+	font-size: 1.5rem;
 	letter-spacing: 1px;
 	font-family: 'Trebuchet MS', sans-serif;
 }
@@ -144,23 +144,27 @@ h2 {
 /*start anout*/
 
 .about {
-	padding-top: 50px;
+	padding-top: 60px;
 	padding-bottom: 50px;
 	background: #f8f9fa;
 
+}
+
+.about-img {
+	overflow: hidden;
 }
 
 .about img {
 	width: 60%;
 	position: relative;
 	left: -25%;
-	border-radius: 50%;
+	border-radius: 5%;
 	cursor: pointer;
 	transition: 1s;
 }
 
 .about img:hover {
-	transform: scale(1.1) rotate(5deg) ;
+	transform: scale(1.04) rotate(0deg) ;
 }
 
 /*end about*/
@@ -221,7 +225,7 @@ h2 {
 .php {width: 90%; background-color: #954ced;}
 .MySql {width: 95%; background-color: #954ced;}
 .jQuery {width: 60%; background-color: #954ced;}
-.dotenet {width: 55%; background-color: #954ced;}
+.dotenet {width: 80%; background-color: #954ced;}
 
 /*end skills*/
 
