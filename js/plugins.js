@@ -64,26 +64,6 @@ $(function(){
 	    }
     })
 
-    $(".navbar-default li #skills-link").click(function(){
-
-    	$(".HTML5").animate({width:'0%'},0);
-    	$(".CSS3").animate({width:'0%'},0);
-    	$(".Bootstrap").animate({width:'0%'},0);
-    	$(".php").animate({width:'0%'},0);
-    	$(".MySql").animate({width:'5%'},0);
-    	$(".jQuery").animate({width:'0%'},0);
-    	$(".dotenet").animate({width:'0%'},0);
-
-
-    	$(".HTML5").animate({width:'90%'},3000);
-    	$(".CSS3").animate({width:'80%'},2500);
-    	$(".Bootstrap").animate({width:'70%'},2000);
-    	$(".php").animate({width:'90%'},3000);
-    	$(".MySql").animate({width:'95%'},3400);
-    	$(".jQuery").animate({width:'60%'},1500);
-    	$(".dotenet").animate({width:'55%'},1400);
-    });
-
     $(".navbar-default li #about-link").click(function(){
     	$(".about img").fadeOut(0);
     	$(".about img").fadeIn(1000);
@@ -112,3 +92,15 @@ $(function(){
     $(".cyber-sec .img-c").css("width",imgwidth+"px")
 
 });
+
+let section = document.querySelector(".skills");
+let spans = document.querySelectorAll("div .skills-stat");
+
+window.onscroll = function() {
+	if( window.scrollY >= section.offsetTop - 200 ) {
+		console.log("secces scroll");
+		spans.forEach((span) => {
+			span.style.width = span.dataset.width;
+		});
+	}
+};
