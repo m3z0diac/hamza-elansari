@@ -3,14 +3,13 @@ $(function(){
 
 
 	var i = 0;
-	var txt1 = "Hi, \n I\'am Hamza Elansari";
-	var txt3 = "Full stack web developer, Penetration tester";
-	var txt4 = "";
+	var txt1 = "Hi, I\'am Hamza Elansari";
+	var txt2 = "full-stack developer, security researcher";
 	var speed = 70;
 	function typeWriter() {
-	  if (i < txt3.length) {
+	  if (i < txt2.length) {
 	    document.getElementById("homeheader1").innerHTML += txt1.charAt(i);
-	    document.getElementById("homeheader3").innerHTML += txt3.charAt(i);
+	    document.getElementById("quote").innerHTML += txt2.charAt(i);
 	    i++;
 	    setTimeout(typeWriter, speed);
 	  }

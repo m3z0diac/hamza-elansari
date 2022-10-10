@@ -18,6 +18,11 @@ p, h1, h2 {
 
 /*start navbar*/
 
+nav {
+	top: 0 !important;
+	z-index: 1 !important;
+	/* height: 4rem !important; */
+}
 
 .navbar {
 	background: none !important;
@@ -29,9 +34,9 @@ p, h1, h2 {
 	border: none;
 }
 
-.navbar-default ul {
-	margin-top: 1.1% !important;
-}
+/* .navbar-default ul {
+	margin-top: 0.8% !important;
+} */
 
 .navbar-default .navbar-nav > li {
 	margin-right: 10px;
@@ -57,7 +62,8 @@ p, h1, h2 {
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 	font-family: var(--main-font);
-	font-size: 20px;
+	font-size: 30px;
+	font-weight: 600;
 }
 
 .navbar > .container .navbar-brand span:first-child{
@@ -99,7 +105,6 @@ p, h1, h2 {
 /*end navbar*/
 
 p {
-	display: none;
 	color: #000;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
@@ -117,13 +122,14 @@ h2 {
 /*start header*/
 
 .header {
-	background-repeat: no-repeat;
+	padding: 10%;
+	padding-top: 15%;
 	overflow: hidden;
 }
 
 .header h1 {
-	margin-top: 45vh;
 	color: #000;
+	margin-top: 8% !important;
 	font-family: var(--main-font);
 }
 
@@ -135,17 +141,18 @@ h2 {
 
 .header i {
 	font-size: 18px;
-	color: #000;
+	color: #fff;
 }
 
 .header .introimg {
-	margin-top: 50% !important;
+	/* margin-top: 50% !important; */
 	overflow: hidden;
 }
 
 .header .blob_img {
 	width: 200px;
     transition: 200ms ease;
+	bottom: 20px;
 }
 
 /*end header*/
@@ -153,7 +160,7 @@ h2 {
 /*start anout*/
 
 .about {
-	padding-top: 70px;
+	padding-top: 75px;
 	padding-bottom: 50px;
 	background: #f8f9fa;
 
@@ -280,7 +287,7 @@ h2 {
 	border-radius: 10px;
 }
 
-.visit, .readmore:hover {
+.visit, .readmore {
 	background-color: #954ced;
 	font-size: 18px;
 	color: #fff;
@@ -288,9 +295,8 @@ h2 {
 	border: 2px solid #954ced;
 }
 
-.visit:hover, .readmore {
-	color: #954ced;
-	background-color: #fff;
+.visit:hover, .readmore:hover, .visit:focus, .readmore:focus {
+	color: #fff;
 	border: 2px solid #000;
 	font-size: 18px;
 	transition: 0.5s;
@@ -313,17 +319,20 @@ h2 {
 .services {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: #f8f9fa;
+	/* background: #f8f9fa; */
 }
 
 .services .service {
 	margin: 10px;
 	height: 220px;
-	border: solid #954ced 2px;
-	border-radius: 10px;
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05) !important;
+	border-radius: .25rem !important;
 	padding: 10px;
 	cursor: pointer;
 	position: relative;
+	box-sizing: border-box;
+	border: 0 solid #e2e8f0;
+	line-height: 1,65px;
 }
 
 .services .service h3 {
@@ -337,7 +346,7 @@ h2 {
 }
 
 .services .service:hover i{
-	transform: scale(1.5) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
 }
 
 .services .service:hover {
