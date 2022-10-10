@@ -123,7 +123,7 @@ h2 {
 
 .header {
 	padding: 10%;
-	padding-top: 15%;
+	padding-top: 13%;
 	overflow: hidden;
 }
 
@@ -131,6 +131,7 @@ h2 {
 	color: #000;
 	margin-top: 8% !important;
 	font-family: var(--main-font);
+	margin-bottom: -9px;
 }
 
 
@@ -142,6 +143,10 @@ h2 {
 .header i {
 	font-size: 18px;
 	color: #fff;
+}
+
+.header a {
+	margin-top: 10px;
 }
 
 .header .introimg {
@@ -217,19 +222,18 @@ h2 {
 .skills-container {
   width:100%;
   background-color: #ddd;
-  border-radius: 10px;
+  border-radius: .50rem;
   overflow: hidden;
 }
 
 .skills-stat {
-  text-align: right;
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
-  color: #fff;
-  font-weight: bold;
-  font-family: var(--main-font);
-  background-color: #954ced;
-  transition: 2s;
+	padding: 10px;
+	text-align: right;
+	color: #fff;
+	font-weight: bold;
+	font-family: var(--main-font);
+	background-color: #954ced;
+	transition: 2s;
 }
 
 /*end skills*/
@@ -246,14 +250,13 @@ h2 {
 .projects .project {
 	padding: 0px;
 	margin: auto;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-top: 15px;
 	background: #fff;
 	left: 500px;
 	padding: 10px;
 	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0px 0px 3px 0px #954ced;
+	box-shadow: 0 10px 15px 3px rgba(0,0,0,.1),2px 4px 6px 2px rgba(0,0,0,.05) !important;
 }
 
 .projects .project:hover{
@@ -284,7 +287,7 @@ h2 {
 	width: 100%;
 	overflow: hidden;
 	cursor: pointer;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .visit, .readmore {
@@ -325,8 +328,8 @@ h2 {
 .services .service {
 	margin: 10px;
 	height: 220px;
-	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05) !important;
-	border-radius: .25rem !important;
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),2px 4px 6px 2px rgba(0,0,0,.05) !important;
+	border-radius: 25px !important;
 	padding: 10px;
 	cursor: pointer;
 	position: relative;
