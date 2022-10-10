@@ -3,14 +3,14 @@ $(function(){
 
 
 	var i = 0;
-	var txt1 = "Hi I\'am Hamza Elansari";
-	var txt2 = "Full stack web developer, Penetration tester";
-	var txt3 = "  One or Zero, Be or Don't Be - M3z0diac  ";
+	var txt1 = "Hi, \n I\'am Hamza Elansari";
+	var txt3 = "Full stack web developer, Penetration tester";
+	var txt4 = "";
 	var speed = 70;
 	function typeWriter() {
 	  if (i < txt3.length) {
 	    document.getElementById("homeheader1").innerHTML += txt1.charAt(i);
-	    document.getElementById("quote").innerHTML += txt3.charAt(i);
+	    document.getElementById("homeheader3").innerHTML += txt3.charAt(i);
 	    i++;
 	    setTimeout(typeWriter, speed);
 	  }

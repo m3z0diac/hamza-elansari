@@ -1,3 +1,7 @@
+:root {
+	--main-font: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -8,15 +12,8 @@ body {
 }
 
 
-img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  transition: 0.5s;
-}
-
-img:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
+p, h1, h2 {
+	font-weight: 650 !important;
 }
 
 /*start navbar*/
@@ -32,14 +29,19 @@ img:hover {
 	border: none;
 }
 
+.navbar-default ul {
+	margin-top: 1.1% !important;
+}
+
 .navbar-default .navbar-nav > li {
 	margin-right: 10px;
 }
 
 .navbar-default .navbar-nav > li > a {
 	font-size: 18px;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 	color: #000;
+	font-weight: 600 !important;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -54,7 +56,7 @@ img:hover {
 }
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 	font-size: 20px;
 }
 
@@ -64,7 +66,7 @@ img:hover {
 
 .navbar > .container .navbar-brand span:last-child{
 	color: #954ced;
-	font-family: 'shahd-bold';
+	font-family: var(--main-font);
 }
 
 .navbar-default .navbar-toggle {
@@ -101,12 +103,12 @@ p {
 	color: #000;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 }
 
 h2 {
 	color: #954ced;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 	position: relative;
 	bottom: 10px;
 }
@@ -115,28 +117,35 @@ h2 {
 /*start header*/
 
 .header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../img/header.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 .header h1 {
 	margin-top: 45vh;
-	color: #fff;
-	font-family: 'Trebuchet MS', sans-serif;
-	letter-spacing: 0.5px;
+	color: #000;
+	font-family: var(--main-font);
 }
 
 
 .header h2 {
 	color: #fff;
-	font-family: 'Trebuchet MS', sans-serif;
-	letter-spacing: 0.5px;
+	font-family: var(--main-font);
 }
 
 .header i {
 	font-size: 18px;
-	color: #fff;
+	color: #000;
+}
+
+.header .introimg {
+	margin-top: 50% !important;
+	overflow: hidden;
+}
+
+.header .blob_img {
+	width: 200px;
+    transition: 200ms ease;
 }
 
 /*end header*/
@@ -144,7 +153,7 @@ h2 {
 /*start anout*/
 
 .about {
-	padding-top: 60px;
+	padding-top: 70px;
 	padding-bottom: 50px;
 	background: #f8f9fa;
 
@@ -163,17 +172,13 @@ h2 {
 	transition: 1s;
 }
 
-.about img:hover {
-	transform: scale(1.04) rotate(0deg) ;
-}
-
 /*end about*/
 
 /*start skills*/
 
 .skills {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 /*	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;*/
@@ -182,8 +187,7 @@ h2 {
 
 .skills h1 {
 	color: #000;
-	font-family: 'Trebuchet MS', sans-serif;
-	letter-spacing: 0.5px;
+	font-family: var(--main-font);
 }
 
 .skills p {
@@ -195,7 +199,7 @@ h2 {
 	padding-left: 7px;
 	padding-right: 7px;
 	color: #000d1e;
-	font-family: cursive;
+	font-family: var(--main-font);
 }
 
 .skills p#aboutskills {
@@ -216,7 +220,7 @@ h2 {
   padding-bottom: 1px !important;
   color: #fff;
   font-weight: bold;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: var(--main-font);
   background-color: #954ced;
   transition: 2s;
 }
@@ -224,10 +228,12 @@ h2 {
 /*end skills*/
 
 
+/* start projects */
 
 .projects {
-	padding-top: 50px;
+	padding-top: 70px;
 	padding-bottom: 100px;
+	overflow: hidden;
 }
 
 .projects .project {
@@ -244,12 +250,8 @@ h2 {
 }
 
 .projects .project:hover{
-	transition: 1s;
-	box-shadow: 2px 2px 8px 2px #000;
-}
-
-.projects .project:hover img{
-	transform: scale(1.1) rotateX(0deg);
+	transition: 0.5s;
+	box-shadow: 1px 1px 4px 1px #000;
 }
 
 .projects .project h3 {
@@ -273,19 +275,13 @@ h2 {
 
 .projects img {
 	width: 100%;
-	transition: 1s;
 	overflow: hidden;
 	cursor: pointer;
 	border-radius: 10px;
 }
 
-.projects img:hover {
-	transform: scale(1.4) rotate(0) ;
-}
-
 .visit, .readmore:hover {
 	background-color: #954ced;
-	letter-spacing: 1px;
 	font-size: 18px;
 	color: #fff;
 	transition: 0.5s;
@@ -296,7 +292,6 @@ h2 {
 	color: #954ced;
 	background-color: #fff;
 	border: 2px solid #000;
-	letter-spacing: 1px;
 	font-size: 18px;
 	transition: 0.5s;
 }
@@ -310,61 +305,10 @@ h2 {
 	color: #000
 }
 
-.projects .carousel-indicators {
-	bottom: 320px;
-	margin-bottom: 50px;
-
-}
-
-.projects .controller {
-	background-color: #954ced;
-	font-size: 15px;
-	color: #fff;
-	transition: 0.5s;
-	border: 2px solid #954ced;
-	font-weight: bold;
-}
-
-.projects .controller:hover {
-	color: #954ced;
-	background-color: #fff;
-	border: 2px solid #000;
-}
-
-/*.projects .carousel-indicators li {
-	width: 25px;
-	height: 25px;
-	border-radius: 0;
-	color: black;
-	text-indent: 0;
-	background: none;
-	border-color: #954ced;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 5px;
-	-webkit-transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
-	-o-transition:all 0.5s ease;
-	transition:all 0.5s ease;
-}
-.projects .carousel-indicators .active {
-	width: 25px;
-	height: 25px;
-	background-color: #954ced;
-	color: #fff;
-}*/
-
-.projects .project .carousel-inner {
-	margin-top: 30px !important;
-}
-
 /*end projects*/
 
 
 /*start services*/
-
-
-/*end services*/
 
 .services {
 	padding-top: 100px;
@@ -383,8 +327,7 @@ h2 {
 }
 
 .services .service h3 {
-	font-family: 'Trebuchet MS', sans-serif;
-	letter-spacing: 1px;
+	font-family: var(--main-font);
 }
 
 .services .service i {
@@ -404,27 +347,43 @@ h2 {
 
 /*end services*/
 
+/* start gallery */
+
+.gallery {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.gallery .galimg {
+	overflow: hidden !important;
+	border-radius: 5%;
+	cursor: pointer;
+	transition: 1s;
+	margin-bottom: 2%;
+}
+
+
+/* end gallery */
+
 /*start blog*/
 
 .blog {
 	background: linear-gradient(90deg, #000d1e 0%, #954ced 90%);
-	padding-top: 40px;
+	padding-top: 70px;
 	padding-bottom: 50px;
+	overflow: hidden;
 }
 
 .blog h2 {
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 	color: #fff;
 }
 
 .blog h3 {
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 	color: #954ced;
-}
-
-
-.blog .articles {
-
 }
 
 .blog .articles .article {
@@ -459,60 +418,6 @@ h2 {
 
 /*end blog*/
 
-/*start cyber security*/
-
-.cyber-sec {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background: #fff;
-}
-
-.cyber-sec h2 {
-	font-family: 'Trebuchet MS', sans-serif;
-	color: #954ced;	
-}
-
-.cyber-sec .row {
-	margin-top: 30px;
-}
-
-.cyber-sec p {
-	margin-top: 20px;
-	color: #000d1e
-}
-
-.cyber-sec p a {
-	color: #954ced;
-	text-decoration: underline;
-}
-
-.cyber-sec .row h3 {
-	font-family: 'Trebuchet MS', sans-serif;
-	color: #954ced;
-}
-
-.cyber-sec .img-c {
-	overflow: hidden;
-	border: 1px solid #fff;
-	padding: 0px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-}
-
-.cyber-sec img {
-	width: 100%;
-	transition: 0.5s;
-	overflow: hidden;
-	cursor: pointer;
-	border-radius: 10px;
-}
-
-.cyber-sec img:hover {
-	transform: scale(1.1) rotate(5deg) ;
-}
-
-/*end cyber security*/
-
 /*start contact*/
 
 .contact {
@@ -522,7 +427,7 @@ h2 {
 }
 
 .contact h2 {
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 	color: #954ced;
 }
 
@@ -601,5 +506,5 @@ h2 {
 
 .state500 h1 {
 	color: #fff;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: var(--main-font);
 }

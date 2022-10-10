@@ -24,7 +24,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><span>Hamza Elansari - </span><span>حمزة الأنصاري</span></a>
+        <a href="index.html"><img class="navbar-brand" style="width: 70px; height:auto" src="img/logo-1.jpg" alt=""></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,11 +32,10 @@
         <ul class="nav navbar-nav">
           <li><a href="#about" id="about-link">About Me</a></li>
           <li><a href="#skills" id="skills-link">Skills</a></li>
-          <li class="hidden-sm hidden-xs"><a href="#projects">Projects</a></li>
-          <li class="hidden-lg hidden-md"><a href="#projectsT">Projects</a></li>
+          <li><a href="#projects">Portfolio</a></li>
           <li><a href="#services" id="services-link">Services</a></li>
+          <li><a href="#gallery" id="services-link">Gallery</a></li>
           <li><a href="#blog" id="blog-link">Blog</a></li>
-          <li><a href="#cyber-sec" id="cybersec-link">Cyber Security</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -45,16 +44,38 @@
 
   	<section class="header text-center">
   		<div class="container">
-  			<h1 id="homeheader1"></h1>
-  			<h2 id="homeheader2"></h2>
-  			<i class='fas fa-quote-left'></i><i id="quote"></i><i class='fas fa-quote-right'></i>
+			<div class="row">
+				<div class="col-lg-8">
+					<h1 id="homeheader1"></h1>
+					<h3 id="homeheader3"></h3>	
+				</div>
+				<div class="col-lg-4" id>
+					<div class="introimg">
+						<svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<mask id="mask0" mask-type="alpha">
+								<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+								130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+								97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+								0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
+							</mask>
+							<g mask="url(#mask0)">
+								<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+								165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+								129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+								-0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
+								<image class="blob_img" x="0" y="0" href="img/gallery/cv.JPG"></image>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
   		</div>
   	</section>
 
 	<section class="about" id="about">
 		<div class="container">
 			<div class="col-lg-6 col-md-6 text-center about-img">
-				<img src="img/a.png">
+				<img src="img/a.jpg">
 			</div>
 			<div class="col-lg-6 col-md-6">
 				<h2>Who ami</h2>
@@ -101,7 +122,7 @@
 				  <div style="width: 0" data-width="60%" class="skills-stat">60%</div>
 				</div>
 
-				<p>Dotenet Technologies</p>
+				<p>C/C++</p>
 				<div class="skills-container">
 				  <div style="width: 0" data-width="80%" class="skills-stat">80%</div>
 				</div>
@@ -110,138 +131,50 @@
 	</section>
 
 
-	<section class="projects hidden-sm hidden-xs" id="projects">
-		<h2 class="text-center">Projects</h2>
-	    <section class="carousel-projects">
-	        <div id="myprojects" class="carousel slide" data-ride="carousel">
-	          <!-- Indicators -->
-            <div class="col-6 text-center">
-                <a class="btn controller" href="#myprojects" role="button" data-slide="prev">
-                    Prev<!-- <i class="fa fa-arrow-left"></i> -->
-                </a>
-                <a class="btn controller" href="#myprojects" role="button" data-slide="next">
-                    Next<!-- <i class="fa fa-arrow-right"></i> -->
-                </a>
-            </div>
-	          <!-- Wrapper for slides -->
-	          <div class="carousel-inner">
-	            <div class="item active">
-
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-						<div class="center-block project">
-							<div class="projimg">
-								<img class="img-responsive" src="img/coinroad.jpg">
-							</div>	
-							<h3>CoinRoad</h3>
-							<p>Products and services of a company landing page<br><span>17 Jan, 2022</span></p>
-							<a href="https://hamza07-w.github.io/CoinRoad" target="_blanck"><button class="btn visit">visit</button></a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-						<div class="center-block project">
-							<div class="projimg">
-								<img class="img-responsive" src="img/resparis.jpg">
-							</div>	
-							<h3>ResParis</h3>
-							<p>France, Paris Restaurant landing page<br><span>29 Jan, 2022</span></p>
-							<a href="https://hamza07-w.github.io/ResParis" target="_blanck"><button class="btn visit">visit</button></a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-						<div class="center-block project">
-							<div class="projimg">
-								<img class="img-responsive" src="img/travrlandtheme.jpg">
-							</div>	
-							<h3>Traveland</h3>
-							<p>open source travel blog theme<br><span>6 Feb, 2022</span></p>
-							<a href="https://hamza07-w.github.io/Traveland" target="_blanck"><button class="btn visit">visit</button></a>
-						</div>
-					</div>	
-	            </div>
-	            <div class="item">
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-									<div class="center-block project">
-										<div class="projimg">
-											<img class="img-responsive" src="img/blogbdariga.jpg">
-										</div>	
-										<h3>BlogBdarija</h3>
-										<p>Personal blog about IT with Moroccan Darija language<br><span>20 Dec, 2021</span></p>
-										<a href="https://blogbdarija.com" target="_blanck"><button class="btn visit">visit</button></a>
-									</div>
-								</div>
-	            </div>
-	          </div>
-	        </div>
-	    </section>
+	<section class="projects" id="projects">
+		<h2 class="text-center">Portfolio</h2>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+			<div class="center-block project">
+				<div class="projimg">
+					<img class="img-responsive" src="img/coinroad.jpg">
+				</div>	
+				<h3>CoinRoad</h3>
+				<p>Landing page for Entreprise<br><span>17 Jan, 2022</span></p>
+				<a href="https://hamza07-w.github.io/CoinRoad" target="_blanck"><button class="btn visit">visit</button></a>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+			<div class="center-block project">
+				<div class="projimg">
+					<img class="img-responsive" src="img/resparis.jpg">
+				</div>	
+				<h3>ResParis</h3>
+				<p>France, Paris Restaurant landing page<br><span>29 Jan, 2022</span></p>
+				<a href="https://hamza07-w.github.io/ResParis" target="_blanck"><button class="btn visit">visit</button></a>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+			<div class="center-block project">
+				<div class="projimg">
+					<img class="img-responsive" src="img/travrlandtheme.jpg">
+				</div>	
+				<h3>Traveland</h3>
+				<p>open source travel blog theme<br><span>6 Feb, 2022</span></p>
+				<a href="https://hamza07-w.github.io/Traveland" target="_blanck"><button class="btn visit">visit</button></a>
+			</div>
+		</div>	
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+			<div class="center-block project">
+				<div class="projimg">
+					<img class="img-responsive" src="img/blogbdariga.jpg">
+				</div>	
+				<h3>BlogBdarija</h3>
+				<p>Personal blog about IT<br><span>20 Dec, 2021</span></p>
+				<a href="https://blogbdarija.com" target="_blanck"><button class="btn visit">visit</button></a>
+			</div>
+		</div>
 	</section>
 
-	<section class="projects hidden-lg hidden-md" id="projectsT">
-		<h2 class="text-center">Projects</h2>
-	    <section class="carousel-projects">
-	        <div id="myprojectstel" class="carousel slide" data-ride="carousel">
-	          <!-- Indicators -->
-            <div class="col-6 text-center">
-                <a class="btn controller" href="#myprojectstel" role="button" data-slide="prev">
-                    <<!-- <i class="fa fa-arrow-left"></i> -->
-                </a>
-                <a class="btn controller" href="#myprojectstel" role="button" data-slide="next">
-                    ><!-- <i class="fa fa-arrow-right"></i> -->
-                </a>
-            </div>
-	          <!-- Wrapper for slides -->
-	          <div class="carousel-inner">
-	            <div class="item active">
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-									<div class="center-block project">
-										<div class="projimg">
-											<img class="img-responsive" src="img/coinroad.jpg">
-										</div>	
-										<h3>CoinRoad</h3>
-										<p>Products and services of a company landing page<br><span>17 Jan, 2022</span></p>
-										<a href="https://hamza07-w.github.io/CoinRoad" target="_blanck"><button class="btn visit">visit</button></a>
-									</div>
-								</div>
-	            </div>
-	            <div class="item">
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-									<div class="center-block project">
-										<div class="projimg">
-											<img class="img-responsive" src="img/resparis.jpg">
-										</div>	
-										<h3>ResParis</h3>
-										<p>France, Paris Restaurant landing page<br><span>29 Jan, 2022</span></p>
-										<a href="https://hamza07-w.github.io/ResParis" target="_blanck"><button class="btn visit">visit</button></a>
-									</div>
-								</div>
-	            </div>
-	            <div class="item">
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-									<div class="center-block project">
-										<div class="projimg">
-											<img class="img-responsive" src="img/travrlandtheme.jpg">
-										</div>	
-										<h3>Traveland</h3>
-										<p>open source travel blog theme<br><span>6 Feb, 2022</span></p>
-										<a href="https://hamza07-w.github.io/Traveland" target="_blanck"><button class="btn visit">visit</button></a>
-									</div>
-								</div>	
-	            </div>
-	            <div class="item">
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-									<div class="center-block project">
-										<div class="projimg">
-											<img class="img-responsive" src="img/blogbdariga.jpg">
-										</div>	
-										<h3>BlogBdarija</h3>
-										<p>Personal blog about IT with Moroccan Darija language<br><span>20 Dec, 2021</span></p>
-										<a href="https://blogbdarija.com" target="_blanck"><button class="btn visit">visit</button></a>
-									</div>
-								</div>
-	            </div>
-	          </div>
-	        </div>
-	    </section>
-	</section>
 	<section class="services text-center" id="services">
 		<div class="container">
 			<h2>Services</h2>
@@ -264,6 +197,29 @@
 					<h3>Penetration Testing</h3>
 					<i class="fas fa-shield-alt"></i>
 					<p>Secure Your Software By Scanning, Observing And Discovering Threats And Vulnerabilities.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<h2 class="text-center">Gallery</h2>
+			<div class="row">
+				<div class="div col-lg-4">
+					<div class="galimg">
+						<img class="img-responsive" src="img/gallery/agadir.jpg" alt="">
+					</div>
+				</div>
+				<div class="div col-lg-4">
+					<div class="galimg">
+						<img class="img-responsive" src="img/gallery/babchala.jpeg" alt="">
+					</div>
+				</div>
+				<div class="div col-lg-4">
+					<div class="galimg">
+						<img class="img-responsive" src="img/gallery/martil.JPG" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -313,31 +269,13 @@
 		</div>
 	</section>
 
-	<section class="cyber-sec text-center" id="cyber-sec">
-		<div class="container">
-			<h2>Cyber Security Conferences & Talks</h2>
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="img-c">
-						<img src="img/conf.jpg" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<p>I like watching and enjoying Cyber Security conferences and talks.<br>
-						I'am available as well to be a part of the comunities thowse helping people and companies securing them self, and I'd like to share my knowledge and experience add to enjoying others achivments. So if you are a part of a conference or a CO of a company and you want me to join contact me on <a href="https://twitter.com/m3z0diac" target="_blanck">Twitter</a> or use one of the links bellow.</p>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
 	<section class="contact" id="contact">
 		<div class="container">
 			<div class="col-lg-4">
 				<h2>Quick Links</h2>
 				<ul class="list-unstyled text-left">
 					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li><a href="#projects">Portfolio</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#blog">Blog</a></li>
 				</ul>
