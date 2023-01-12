@@ -1,4 +1,7 @@
 :root {
+	--primary-color: #954ced;
+	--white-color: #fff;
+	--black-color: #000;
 	--main-font: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
@@ -45,7 +48,7 @@ nav {
 .navbar-default .navbar-nav > li > a {
 	font-size: 18px;
 	font-family: var(--main-font);
-	color: #000;
+	color: var(--black-color);
 	font-weight: 600 !important;
 }
 
@@ -56,7 +59,7 @@ nav {
 .navbar-default .navbar-nav > li > a:focus
 {
 	background: none;
-	color: #954ced;
+	color: var(--primary-color);
 	transition: 0.5s
 }
 
@@ -67,11 +70,11 @@ nav {
 }
 
 .navbar > .container .navbar-brand span:first-child{
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 .navbar > .container .navbar-brand span:last-child{
-	color: #954ced;
+	color: var(--primary-color);
 	font-family: var(--main-font);
 }
 
@@ -82,16 +85,16 @@ nav {
 }
 
 .navbar-default .navbar-toggle:hover {
-	background-color: #954ced !important;
-	border: 2px solid #954ced;
+	background-color: var(--primary-color) !important;
+	border: 2px solid var(--primary-color);
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar{
-	background-color: #fff;
+	background-color: var(--white-color);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #954ced;
+	background-color: var(--primary-color);
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -99,20 +102,20 @@ nav {
 .navbar-default .navbar-nav > .open > a:focus
 {
 	background: none;
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 /*end navbar*/
 
 p {
-	color: #000;
+	color: var(--black-color);
 	font-size: 1.5rem;
 	letter-spacing: 1px;
 	font-family: var(--main-font);
 }
 
 h2 {
-	color: #954ced;
+	color: var(--primary-color);
 	font-family: var(--main-font);
 	position: relative;
 	bottom: 10px;
@@ -128,7 +131,7 @@ h2 {
 }
 
 .header h1 {
-	color: #000;
+	color: var(--black-color);
 	margin-top: 8% !important;
 	font-family: var(--main-font);
 	margin-bottom: -9px;
@@ -136,13 +139,13 @@ h2 {
 
 
 .header h2 {
-	color: #fff;
+	color: var(--white-color);
 	font-family: var(--main-font);
 }
 
 .header i {
 	font-size: 18px;
-	color: #fff;
+	color: var(--white-color);
 }
 
 .header a {
@@ -167,7 +170,7 @@ h2 {
 .about {
 	padding-top: 75px;
 	padding-bottom: 50px;
-	background: #f8f9fa;
+	background: var(--white-color);
 
 }
 
@@ -194,34 +197,34 @@ h2 {
 /*	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;*/
-	background: #fff;
+	background: var(--white-color);
 }
 
 .skills h1 {
-	color: #000;
+	color: var(--primary-color);
 	font-family: var(--main-font);
 }
 
 .skills p {
 	margin-top: 10px;
-	color: #000;
+	color: var(--black-color);
 }
 
 .skills p i {
 	padding-left: 7px;
 	padding-right: 7px;
-	color: #000d1e;
+	color: var(--black-color)d1e;
 	font-family: var(--main-font);
 }
 
 .skills p#aboutskills {
 	margin-bottom: 15px;
-	color: #000;
+	color: var(--black-color);
 }
 
 .skills-container {
   width:100%;
-  background-color: #ddd;
+  background-color: var(--white-color);
   border-radius: .50rem;
   overflow: hidden;
 }
@@ -229,10 +232,10 @@ h2 {
 .skills-stat {
 	padding: 10px;
 	text-align: right;
-	color: #fff;
+	color: var(--white-color);
 	font-weight: bold;
 	font-family: var(--main-font);
-	background-color: #954ced;
+	background-color: var(--primary-color);
 	transition: 2s;
 }
 
@@ -244,6 +247,7 @@ h2 {
 	padding-top: 70px;
 	padding-bottom: 100px;
 	overflow: hidden;
+	background-color: var(--white-color);
 }
 
 .projects .project {
@@ -251,7 +255,7 @@ h2 {
 	margin: auto;
 	margin-bottom: 20px;
 	margin-top: 15px;
-	background: #fff;
+	background: var(--white-color);
 	left: 500px;
 	padding: 10px;
 	overflow: hidden;
@@ -260,21 +264,21 @@ h2 {
 
 .projects .project:hover{
 	transition: 0.5s;
-	box-shadow: 1px 1px 4px 1px #000;
+	box-shadow: 1px 1px 4px 1px var(--black-color);
 }
 
 .projects .project h3 {
 	margin-bottom: 0;
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 .projects .project p {
-	color: #000;
+	color: var(--black-color);
 	font-size: 16px;
 }
 
 .projects .project p span{
-	color: #777;
+	color: var(--black-color);
 }
 
 .projects .project .projimg {
@@ -290,27 +294,27 @@ h2 {
 }
 
 .visit, .readmore {
-	background-color: #954ced;
+	background-color: var(--primary-color);
 	font-size: 18px;
-	color: #fff;
+	color: var(--white-color);
 	transition: 0.5s;
-	border: 2px solid #954ced;
+	border: 2px solid var(--primary-color);
 }
 
 .visit:hover, .readmore:hover, .visit:focus, .readmore:focus {
-	color: #fff;
-	border: 2px solid #000;
+	color: var(--white-color);
+	border: 2px solid var(--black-color);
 	font-size: 18px;
 	transition: 0.5s;
 }
 
 .projects .project button a {
 	text-decoration: none;
-	color: #fff;
+	color: var(--white-color);
 }
 
 .projects .project button a:hover {
-	color: #000
+	color: var(--black-color)
 }
 
 /*end projects*/
@@ -321,7 +325,7 @@ h2 {
 .services {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	/* background: #f8f9fa; */
+	background-color: var(--white-color);
 }
 
 .services .service {
@@ -344,7 +348,7 @@ h2 {
 .services .service i {
 	font-size: 30px;
 	transition: 0.5s;
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 .services .service:hover i{
@@ -353,7 +357,7 @@ h2 {
 
 .services .service:hover {
 	transition: 0.5s;
-	box-shadow: 0px 0px 4px 0px #000;
+	box-shadow: 0px 0px 4px 0px var(--black-color);
 }
 
 /*end services*/
@@ -363,7 +367,7 @@ h2 {
 .gallery {
 	padding-top: 70px;
 	padding-bottom: 50px;
-	background-color: #fff;
+	background-color: var(--white-color);
 	overflow: hidden;
 }
 
@@ -381,7 +385,7 @@ h2 {
 /*start blog*/
 
 .blog {
-	background: linear-gradient(90deg, #000d1e 0%, #954ced 90%);
+	background: linear-gradient(90deg, var(--black-color)d1e 0%, var(--primary-color) 90%);
 	padding-top: 70px;
 	padding-bottom: 50px;
 	overflow: hidden;
@@ -389,17 +393,17 @@ h2 {
 
 .blog h2 {
 	font-family: var(--main-font);
-	color: #fff;
+	color: var(--white-color);
 }
 
 .blog h3 {
 	font-family: var(--main-font);
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 .blog .articles .article {
-	box-shadow: 0px 0px 4px 0px #000;
-	background: #fff;
+	box-shadow: 0px 0px 4px 0px var(--black-color);
+	background: var(--white-color);
 	border-radius: 10px;
 	overflow: hidden;
 	margin-top: 20px;
@@ -424,7 +428,7 @@ h2 {
 }
 
 #date {
-	color: #777
+	color: var(--black-color)
 }
 
 /*end blog*/
@@ -432,14 +436,14 @@ h2 {
 /*start contact*/
 
 .contact {
-	background: #f8f9fa;
+	background: var(--white-color);
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 .contact h2 {
 	font-family: var(--main-font);
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 .contact ul, .contact form {
@@ -448,37 +452,37 @@ h2 {
 
 .contact ul li a {
 	font-size: 18px;
-	color: #000;
+	color: var(--black-color);
 	transition: 0.5s;
 }
 
 .contact ul li a:hover {
 	text-decoration: none;
 	transform: scale(1.3);
-	color: #954ced;
+	color: var(--primary-color);
 }
 
 .contact .send {
-	background-color: #954ced;
+	background-color: var(--primary-color);
 	letter-spacing: 1px;
 	font-size: 16px;
-	color: #fff;
+	color: var(--white-color);
 	transition: 0.5s;
-	border: 2px solid #954ced;
+	border: 2px solid var(--primary-color);
 }
 
 .contact .send:hover {
-	color: #954ced;
-	background-color: #fff;
+	color: var(--primary-color);
+	background-color: var(--white-color);
 }
 
 .form-control {
-	border: 1px solid #954ced;
+	border: 1px solid var(--primary-color);
 }
 
 .form-control:hover, .form-control:focus {
 	box-shadow: none !important;
-	border: 1px solid #954ced;
+	border: 1px solid var(--primary-color);
 }
 
 /*end contact*/
@@ -487,16 +491,16 @@ h2 {
 /*js stuff*/
 
 .set-border {
-	border-bottom: solid 3px #954ced;
+	border-bottom: solid 3px var(--primary-color);
 	transition: 0.5s
 }
 
 .nav-shadow {
-	box-shadow: 0px 0px 2px 0px #954ced;
+	box-shadow: 0px 0px 2px 0px var(--primary-color);
 }
 
 .set-bg {
-	background: #fff !important;
+	background: var(--white-color) !important;
 	-webkit-transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;
 	-o-transition:all 0.5s ease;
@@ -516,6 +520,6 @@ h2 {
 }
 
 .state500 h1 {
-	color: #fff;
+	color: var(--white-color);
 	font-family: var(--main-font);
 }

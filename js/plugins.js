@@ -4,7 +4,7 @@ $(function(){
 
 	var i = 0;
 	var txt1 = "Hi, I\'am Hamza Elansari";
-	var txt2 = "full-stack developer, cyber security lover";
+	var txt2 = "Full-Stack Developer, Problem Solver";
 	var speed = 70;
 	function typeWriter() {
 	  if (i < txt2.length) {
